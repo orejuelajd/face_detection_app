@@ -2,6 +2,7 @@
 const express = require("express")
 const path = require("path")
 const app = express()
+var multer  = require('multer')
 
 const publicFolder = path.join(__dirname, "public")
 app.use("/public", express.static(publicFolder))
